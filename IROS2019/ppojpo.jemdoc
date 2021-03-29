@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{http://www.me.berkeley.edu/~yongxiangfan/research.html}, analytics{UA-114953994-1} 
+# jemdoc: menu{MENU}{research.html}, analytics{UA-114953994-1} 
 = Optimization Model for Planning Precision Grasps with Multi-Fingered Hands
 \n
 *Yongxiang Fan, Xinghao Zhu, Masayoshi Tomizuka*
@@ -11,9 +11,9 @@ Grasp planning for multi-fingered hands is challenging due to the high-dimension
 
 == Background
 
-The topic was initialized with the results in [http://www.me.berkeley.edu/~yongxiangfan/IROS2018/fingersplit.html iterative contact point optimization (CPO) - palm pose optimization (PPO) in IROS 2018], aiming to enable an active collision avoidance instead of pruning the collided grasps. Further investigation shows that separation of contact point optimization (CPO) and palm pose optimization (PPO) is not a good way especially for low-dimensional multi-fingered hands. More specifically, 1) fixing contacts in PPO barely make the palm of a 4-DOFs Barrett hand move due to the very limited DOF left in PPO optimization. 2) Collision avoidance and the PPO with fixed contacts are not compatible since the majority of the collisions are between fingertips and object and avoid collision is not possible with fixed contacts (fingertips). 3) Collision avoidance and CPO are not compatible since CPO constrains the fingertip motion in tangent space, while collided fingers should move in normal direction to avoid collision. 
+The topic was initialized with the results in [IROS2018/fingersplit.html iterative contact point optimization (CPO) - palm pose optimization (PPO) in IROS 2018], aiming to enable an active collision avoidance instead of pruning the collided grasps. Further investigation shows that separation of contact point optimization (CPO) and palm pose optimization (PPO) is not a good way especially for low-dimensional multi-fingered hands. More specifically, 1) fixing contacts in PPO barely make the palm of a 4-DOFs Barrett hand move due to the very limited DOF left in PPO optimization. 2) Collision avoidance and the PPO with fixed contacts are not compatible since the majority of the collisions are between fingertips and object and avoid collision is not possible with fixed contacts (fingertips). 3) Collision avoidance and CPO are not compatible since CPO constrains the fingertip motion in tangent space, while collided fingers should move in normal direction to avoid collision. 
 
-A video below demonstrated the failure of iterative CPO-PPO [http://www.me.berkeley.edu/~yongxiangfan/IROS2018/fingersplit.html in our previous work]. 
+A video below demonstrated the failure of iterative CPO-PPO [IROS2018/fingersplit.html in our previous work]. 
 
 ~~~
 {}{raw}

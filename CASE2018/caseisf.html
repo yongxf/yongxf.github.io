@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Grasp Planning for Customized Grippers by Iterative Surface Fitting</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-114953994-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Website</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../courses.html">Courses</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Grasp Planning for Customized Grippers by Iterative Surface Fitting</h1>
+<div id="subtitle"><br />
+Yongxiang Fan*, Hsien-Chung Lin*, Te Tang, Masayoshi Tomizuka</div>
+</div>
+<p>Welcome!</p>
+<p>This page supplements our CASE2018 submission, in which we present an approach to plan robust grasps for bin picking with customized grippers by a novel approach that combines iterative surface fitting (ISF) and guided sampling. </p>
+<p>Customized grippers have broad applications in industrial assembly lines. Compared with general parallel grippers, the customized grippers have specifically designed fingers to increase the contact area with the workpieces and improve the grasp robustness. However, grasp planning for customized grippers is challenging due to the object variations, surface contacts and structural constraints of the grippers. In this paper, an iterative surface fitting (ISF) algorithm is proposed to plan grasps for customized grippers. ISF simultaneously searches for optimal gripper transformation and finger displacement by minimizing the surface fitting error. A guided sampling is introduced to avoid ISF getting stuck in local optima and improve the collision avoidance performance. The proposed algorithm is able to consider the structural constraints of the gripper, such as the range of jaw width, and plan optimal grasps in real-time. The effectiveness of the algorithm is verified by both simulations and experiments.</p>
+<h2>We are the CASE2018 Best Application Paper Award Winner!</h2>
+<p>The full paper can be downloaded in <a href="caseisf.pdf">the following link</a>. </p>
+<h2>Simulation Illustration of ISF</h2>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/1dBDEBZyJv8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><br /></p>
+<p>Video: Illustration of the grasp searching by ISF on a Oscar model.  </p>
+<h2>Experimental Results by ISF</h2>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/RVbuXqtfwv4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><br /></p>
+<p>Video: Bin picking task with the proposed method in a heavy clutter environment. </p>
+<h2>Failure Mode</h2>
+<p>Point to plane fitting error may not be the best metric when choosing the optimal grasp from multiple feasible grasps.</p>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/502cKN7MSuU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><br /></p>
+<h2>Contacts</h2>
+<p>contact my email for any questions: yongxiang_fanATberkeleyDOTedu</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-03-29 12:35:40 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

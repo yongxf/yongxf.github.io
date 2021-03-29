@@ -21,10 +21,10 @@ try {
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Website</div>
-<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/index.html">Home</a></div>
-<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/research.html" class="current">Research</a></div>
-<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/publications.html">Publications</a></div>
-<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/courses.html">Courses</a></div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../courses.html">Courses</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
@@ -35,8 +35,8 @@ try {
 <p>Welcome to this page. This page supplements our IROS2019 paper submission, in which we present an optimization model to plan precision grasps with multi-fingered hands. </p>
 <p>Grasp planning for multi-fingered hands is challenging due to the high-dimensionality, collision and sensing/actuation uncertainties. We propose an optimization model to solve the grasp planning problem. The optimization considers several geometric related qualities and collisions, and is relaxed with the proposed optimization modeling method. The relaxed optimization is solved by the proposed iterative PPO-JPO. PPO stands for the palm pose optimization while JPO stands for the joint position optimization. The proposed optimization model is able to locate collision-free optimal precision grasps efficiently. The average computation time is 0.50 sec/grasp. The searching is robust to the incompleteness and noise of the point cloud. </p>
 <h2>Background</h2>
-<p>The topic was initialized with the results in <a href="http://www.me.berkeley.edu/~yongxiangfan/IROS2018/fingersplit.html">iterative contact point optimization (CPO) - palm pose optimization (PPO) in IROS 2018</a>, aiming to enable an active collision avoidance instead of pruning the collided grasps. Further investigation shows that separation of contact point optimization (CPO) and palm pose optimization (PPO) is not a good way especially for low-dimensional multi-fingered hands. More specifically, 1) fixing contacts in PPO barely make the palm of a 4-DOFs Barrett hand move due to the very limited DOF left in PPO optimization. 2) Collision avoidance and the PPO with fixed contacts are not compatible since the majority of the collisions are between fingertips and object and avoid collision is not possible with fixed contacts (fingertips). 3) Collision avoidance and CPO are not compatible since CPO constrains the fingertip motion in tangent space, while collided fingers should move in normal direction to avoid collision. </p>
-<p>A video below demonstrated the failure of iterative CPO-PPO <a href="http://www.me.berkeley.edu/~yongxiangfan/IROS2018/fingersplit.html">in our previous work</a>. </p>
+<p>The topic was initialized with the results in <a href="IROS2018/fingersplit.html">iterative contact point optimization (CPO) - palm pose optimization (PPO) in IROS 2018</a>, aiming to enable an active collision avoidance instead of pruning the collided grasps. Further investigation shows that separation of contact point optimization (CPO) and palm pose optimization (PPO) is not a good way especially for low-dimensional multi-fingered hands. More specifically, 1) fixing contacts in PPO barely make the palm of a 4-DOFs Barrett hand move due to the very limited DOF left in PPO optimization. 2) Collision avoidance and the PPO with fixed contacts are not compatible since the majority of the collisions are between fingertips and object and avoid collision is not possible with fixed contacts (fingertips). 3) Collision avoidance and CPO are not compatible since CPO constrains the fingertip motion in tangent space, while collided fingers should move in normal direction to avoid collision. </p>
+<p>A video below demonstrated the failure of iterative CPO-PPO <a href="IROS2018/fingersplit.html">in our previous work</a>. </p>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/bT6sTvGOgYs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p><br /></p>
 <p>Therefore, we solve the optimization by &ldquo;fixing the joint position&rdquo; in PPO, instead of &ldquo;fixing the contact&rdquo;. We call the new algorithm: iterative PPO-JPO. JPO stands for the joint position optimization. The modified optimization is very simple to solve, and only contains one for loop. The simulation results are shown below. </p>
@@ -56,7 +56,7 @@ try {
 <p>contact my email for any questions: yongxiang_fanATberkeleyDOTedu</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2019-03-04 17:05:40 Pacific Standard Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-03-29 12:27:02 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

@@ -5,12 +5,12 @@
 ~~~
 {}{img_left}{myphoto.jpg}{Yongxiang Fan}{300px}
 Welcome to my website!
-\n\n
+\n
 I am a Ph.D. in Robotics graduated from *[https://www.berkeley.edu/ University of California, Berkeley]*. I worked with *Prof. [http://www.me.berkeley.edu/people/faculty/masayoshi-tomizuka Masayoshi Tomizuka]* in [http://msc.berkeley.edu/index.html Mechanical Systems Control] (MSC) Labortorary. 
 \n
 My research interest lies in interdisciplinary combination of robotics, optimization, aritificial intelligence and control theories, with the fileds in robotic dexterity research (grasping, manipulation and assembly) and human robot interation (collision avoidance, motion planning and human robot collabration). 
 
-\n\nEmail: yongxiang_fanATberkeleyDTedu
+\nEmail: yongxiang_fanATberkeleyDTedu\n 
 \[[files/cv.pdf Curriculum Vitae]\], \[[https://scholar.google.com/citations?user=YAGWw68AAAAJ&hl=en Google Scholar]\]
 
 == Updates
@@ -18,7 +18,7 @@ My research interest lies in interdisciplinary combination of robotics, optimiza
 . 02\/2021: Paper: 6-DoF Contrastive Grasp Proposal Network accepted by ICRA 2021.
 . 10\/2020: Short Paper: Why Does Robotic Dexterous Hand Grasp Fail? accepted by IROS 2020 Workshop.
 . 05\/2019: Dissertation defense finished!
-. 03\/2019: Two Papers: [https://arxiv.org/abs/1902.10841 Efficient Grasp Planning and Execution with Multi-Fingered Hands by Surface Fitting] and [https://yongxf.github.io/IROS2019/ppojpo.html Iterative PPO-JPO] accepted by RAL and IROS2019!
+. 03\/2019: Two Papers: [https://arxiv.org/abs/1902.10841 Efficient Grasp Planning and Execution with Multi-Fingered Hands by Surface Fitting] and [IROS2019/ppojpo.html Iterative PPO-JPO] accepted by RAL and IROS2019!
 . 02\/2019: Paper: [http://arxiv.org/abs/1809.08548 A Learning Framework for High Precision Industrial Assembly] accepted by [https://www.icra2019.org/ IEEE ICRA2019]!
 . 08\/2018: Paper: [https://arxiv.org/abs/1803.11290 Grasp Planning for Customized Grippers by Iterative Surface Fitting] won the [http://case2018.org/ IEEE CASE2018] [http://www.ieee-ras.org/awards-recognition/conference-awards/69-awards-recognition/society-awards/81-ieee-case-best-application-paper-award-sponsored-by-qsi Best Application Paper Award]! 
 ~~~
@@ -36,7 +36,7 @@ My research interest lies in interdisciplinary combination of robotics, optimiza
 
 == Experience
 
-- Graduate Student Researcher~~~~~~~~ MSC Lab, UC Berkeley~~~~~~~~ 2014-present
+- Graduate Student Researcher~~~~~~~~ MSC Lab, UC Berkeley~~~~~~~~ 2014-2019
 -- Project 1: *Grasp* Planning for Customized Grippers\/ Multi-Fingered Hands
 -- Project 2: Robust Dexterous In-Hand *Manipulation* for Multi-Fingered Hands
 -- Project 3: Skill Learning for Precision Industrial *Assembly*
