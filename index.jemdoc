@@ -6,23 +6,26 @@
 {}{img_left}{myphoto.jpg}{Yongxiang Fan}{300px}
 Welcome to my website!
 \n\n
-I am a 5th year Ph.D. candidates in Robotics at *[https://www.berkeley.edu/ University of California, Berkeley]*. I work with *Prof. [http://www.me.berkeley.edu/people/faculty/masayoshi-tomizuka Masayoshi Tomizuka]* in [http://msc.berkeley.edu/index.html Mechanical Systems Control] (MSC) Labortorary. 
+I am a Ph.D. in Robotics graduated from *[https://www.berkeley.edu/ University of California, Berkeley]*. I worked with *Prof. [http://www.me.berkeley.edu/people/faculty/masayoshi-tomizuka Masayoshi Tomizuka]* in [http://msc.berkeley.edu/index.html Mechanical Systems Control] (MSC) Labortorary. 
 \n
 My research interest lies in interdisciplinary combination of robotics, optimization, aritificial intelligence and control theories, with the fileds in robotic dexterity research (grasping, manipulation and assembly) and human robot interation (collision avoidance, motion planning and human robot collabration). 
 
-Here is my [files/cv.pdf Curriculum Vitae]. 
+\n\nEmail: yongxiang_fanATberkeleyDTedu
+\[[files/cv.pdf Curriculum Vitae]\], \[[https://scholar.google.com/citations?user=YAGWw68AAAAJ&hl=en Google Scholar]\]
 
 == Updates
-. 03\/01\/2019: Two Papers [https://www.decf.berkeley.edu/~yongxiangfan/IROS2019/ppojpo.html Iterative PPO-JPO] and [https://www.decf.berkeley.edu/~yongxiangfan/ICRA2019/rcnnisf.html RCNN-ISF] submitted to [https://www.iros2019.org/ IEEE IROS2019]!
-. 02\/23\/2019: Paper: [https://arxiv.org/abs/1902.10841 Efficient Grasp Planning and Execution with Multi-Fingered Hands by Surface Fitting
-] submitted to /IEEE Robotics and Automation Letters (RA-L)/ with [https://www.iros2019.org/ IROS2019 option]!
-. 02\/01\/2019: Paper: [http://arxiv.org/abs/1809.08548 A Learning Framework for High Precision Industrial Assembly] accepted by [https://www.icra2019.org/ IEEE ICRA2019]!
-. 08\/22\/2018: Paper: [https://arxiv.org/abs/1803.11290 Grasp Planning for Customized Grippers by Iterative Surface Fitting] won the [http://case2018.org/ IEEE CASE2018] [http://www.ieee-ras.org/awards-recognition/conference-awards/69-awards-recognition/society-awards/81-ieee-case-best-application-paper-award-sponsored-by-qsi Best Application Paper Award]! 
+. 02\/2021: Paper: Learn to Grasp with Less Supervision: A Data-Efficient Posterior Grasp Sampling Loss, submitted to RAL with IROS2021 option.
+. 02\/2021: Paper: 6-DoF Contrastive Grasp Proposal Network accepted by ICRA 2021.
+. 10\/2020: Short Paper: Why Does Robotic Dexterous Hand Grasp Fail? accepted by IROS 2020 Workshop.
+. 05\/2019: Dissertation defense finished!
+. 03\/2019: Two Papers: [https://arxiv.org/abs/1902.10841 Efficient Grasp Planning and Execution with Multi-Fingered Hands by Surface Fitting] and [https://yongxf.github.io/IROS2019/ppojpo.html Iterative PPO-JPO] accepted by RAL and IROS2019!
+. 02\/2019: Paper: [http://arxiv.org/abs/1809.08548 A Learning Framework for High Precision Industrial Assembly] accepted by [https://www.icra2019.org/ IEEE ICRA2019]!
+. 08\/2018: Paper: [https://arxiv.org/abs/1803.11290 Grasp Planning for Customized Grippers by Iterative Surface Fitting] won the [http://case2018.org/ IEEE CASE2018] [http://www.ieee-ras.org/awards-recognition/conference-awards/69-awards-recognition/society-awards/81-ieee-case-best-application-paper-award-sponsored-by-qsi Best Application Paper Award]! 
 ~~~
 
 == Education
 
-- *Ph.D. in Mechanical Engineering, UC Berkeley, 2014 - 2019 (Expected)*
+- *Ph.D. in Mechanical Engineering, UC Berkeley, 2014 - 2019*
 -- Major: Controls~~~~~~~~ Minors: Robotics, Optimization
 -- GPA: 3.95\/4.0~~~~~~~~ Advisor: Prof. Masayoshi Tomizuka
 -- Related Fileds: Reinforcement Learning, Machine Learning
@@ -46,14 +49,6 @@ Here is my [files/cv.pdf Curriculum Vitae].
 --- Develop Vision and Tracking Algorithms for Dental Robotics.
 -- Robotics Research Intern~~~~~~~~ [https://www.fanuc.co.jp/eindex.html FANUC Corporation], Japan ~~~~~~~~ 06\/2015-07\/2015
 --- Visual Servoing and Collision Avoidance Development
-
-
-== Contact
-2103 Etcheverry Hall
-\nDepartment of Mechanical Engineering
-\nUniversity of California, Berkeley
-\nBerkeley, CA, 94720, USA
-\n\nEmail: yongxiang_fanATberkeleyDTedu
 
 
 
