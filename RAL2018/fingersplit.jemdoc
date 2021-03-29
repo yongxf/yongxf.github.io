@@ -1,0 +1,79 @@
+# jemdoc: menu{MENU}{fingersplit.html}, analytics{UA-114953994-1} 
+= Real-Time Grasp Planning for Multi-Fingered Hands by Finger Splitting
+\n
+*Yongxiang Fan, Te Tang, Hsien-Chung Lin, Masayoshi Tomizuka*
+
+Welcome!
+
+
+This page supplements our IROS 2018 paper "real-time grasp planning for multi-fingered hands by finger splitting", in which we present a novel strategy called finger splitting to plan grasps for multi-fingered hands. 
+
+
+Grasp planning for multi-fingered hands has heavier computation load than that for parallel grippers, due to the joint-contact coupling, surface nonlinearities and high dimensionality, thus is generally not affordable for real-time implementations. The finger splitting strategy proposed in this paper plans grasps for multi-fingered hands by transferring the knowledge from grasp databases of parallel grippers. In finger splitting, the multi-fingered hand is first initialized by mapping an optimal grasp in the database for parallel grippers, followed by a dual-stage iterative optimization including a contact point optimization (CPO) and a palm pose optimization (PPO), to gradually split fingers and adjust both the contact points and the pose of the palm. The dual-stage optimization is able to consider both the object grasp quality and hand manipulability, address the nonlinearities and coupling, and achieve efficient convergence within one second. Simulation results demonstrate the effectiveness of the proposed approach. 
+
+
+
+== Simulation Videos
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/chIExqNYTOU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+Video: Overall introduction for the finger splitting algorithm. 
+
+
+
+== Validation of Quality Improvements (Normalized)
+
+~~~
+{}{img_left}{different_quality_cross_validation.jpg}{alt text}{960}{540}
+~~~
+
+Fig: Normalized quality measurements by different metrics during finger splitting. (a) shows the optimization result of the proposed quality metric. (b)(c)(d) are quality measurements of the finger splitting process using grasp isotropy, wrench volume and Ferrari-Canny metrics. All the qualities are normalized in order to display the trend during finger splitting.
+
+
+
+== Mujoco Simulation Results 
+~~~
+{}{raw}
+<iframe width="768" height="432" src="https://www.youtube.com/embed/G-fK5SWuALw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+Video: Comparison between the initial optimal parallel grasp (Left) and the finger splitting result (Right). The initial optimal parallel grasp cannot resist the gravity and the acceleration during lifting. 
+
+
+== Finger Splitting on Polygons 
+~~~
+{}{raw}
+<iframe width="768" height="432" src="https://www.youtube.com/embed/Nfvr6t1icks?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+Video: The simulation results on objects with few vertices. 
+
+
+== Failure Modes
+
+There are two failure modes. The first one is related to termination condition (shown in left of below figure). In the figure, the algorithm gives incorrect contact angle (the angle between the fingertip normal and the surface normal) and stop the algorithm unexpectedly. The error is caused by the incorrect contact surface estimation when the fingertip penetrating the edge of the polygons.  
+The second failure mode is related with the finger splitting behavior (shown in right of below figure). Due to the inaccurate placement of the initial grasp, the fingertips envelope an excessive large triangle and report a high object grasp quality. Therefore, any motion towards the object will reduce the object grasp quality unless the hand manipulability compensates the decrease of object grasp quality. The finger splitting eventually end up with a bad pose.    
+
+~~~
+{}{img_left}{failuremodes.PNG}{alt text}{1800}{540} 
+~~~
+
+Fig: (Left) Failure mode one related to termination condition caused by incorrect contact angle estimation. (Right) Failure mode two related to off-contact. 
+
+
+== Contacts
+
+contact my email for any questions: yongxiang_fanATberkeleyDOTedu
+
+
+
+
+
+
+

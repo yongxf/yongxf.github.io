@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>A Learning Framework for High Precision Industrial Assembly</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-114953994-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Website</div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/index.html">Home</a></div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/publications.html">Publications</a></div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/courses.html">Courses</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>A Learning Framework for High Precision Industrial Assembly</h1>
+<div id="subtitle"><br />
+Yongxiang Fan, Jieliang Luo, Masayoshi Tomizuka</div>
+</div>
+<p>Welcome!</p>
+<p>This page supplements our ICRA paper submission, in which we present a learning framework to learn a high precision industrial assembly policy. The framework contains a semi-supervisor by trajectory optimization, and a reinforcement learning by actor-critic. </p>
+<p>Automatic assembly has broad applications in industries. Traditional assembly tasks utilize predefined trajectories or tuned force control parameters, which make the automatic assembly time-consuming, difficult to generalize, and not robust to uncertainties. In this paper, we propose a learning framework for high precision industrial assembly. The framework combines both the supervised learning and the reinforcement learning. The supervised learning utilizes trajectory optimization to provide the initial guidance to the policy, while the reinforcement learning utilizes actor-critic algorithm to establish the evaluation system when the supervisor is not accurate. The proposed learning framework is more efficient compared with the reinforcement learning and achieves
+better stability performance than the supervised learning. The effectiveness of the method is verified by both the simulation
+and experiment.</p>
+<h2>Paper Download</h2>
+<p>The full paper can be downloaded through <a href="guidedddpg.pdf">this link</a>. </p>
+<h2>Simulation Results</h2>
+<p>Two simulation tasks are introduced to verify the algorithm. The first one is U-shape joint assembly, and the second one is the Lego brick insertion. We first use U-shape joint assembly to illustrate the performance of the guided-DDPG compared with pure-DDPG. </p>
+<h3>Comparison of DDPG and Guided-DDPG (with U-Shape Joint Assembly Task)</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/58xlB5bQJvI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DZ2l68gqGpQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>Video: Comparison of the pure-DDPG (Left) and the Guided-DDPG (Right)</p>
+<p><br /></p>
+<h3>Adaptability Test</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/XKI7SVg_KHQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>Video: The adaptablity of the learned policy. The policy successfully adapts to various uncertianties except the incomplete hole. 
+<br /></p>
+<h2>Experimental Results</h2>
+<p>We use the Lego brick insertion task to illustrate the proposed learning framework. Due to the calibration error, the hole of the Lego piece is not precisely known. A successful assembly policy should adapt according to the environment. </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PYHO-FIubFQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OGfjetTSEO8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>Video: Test results for the Pure-DDPG (Left) and Guided-DDPG (Right). The Pure-DDPG is trained by constraining the exploration space in 1mm out of the boundary of the hole, while the Guided-DDPG is trained by constraining the exploration space in 3mm out of the boundary of the hole. The training time is 2 hours and 1.5 hours, respectively. </p>
+<h2>Overall Summary Video</h2>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/ECaZoGnXatU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><br /></p>
+<h2>Contacts</h2>
+<p>contact my email for any questions: yongxiang_fanATberkeleyDOTedu</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-03-04 20:08:09 Pacific Standard Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

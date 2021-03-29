@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU}{http://www.me.berkeley.edu/~yongxiangfan/research.html}, analytics{UA-114953994-1} 
+= Real-Time Robust Finger Gaits Planning under Object Shape and Dynamics Uncertainties
+\n
+Yongxiang Fan, Te Tang, Hsien-Chung Lin, Yu Zhao, Masayoshi Tomizuka
+
+Welcome!
+
+
+This page supplements our IROS 2017 paper submission, in which we present a dual-stage optimization based planner for real-time robust finger gaits planning and dexterous manipulation. 
+
+Dexterous manipulation has broad applications in assembly lines, warehouses and agriculture. To perform large-scale manipulation tasks for various objects, a multi-fingered robotic hand sometimes has to sequentially adjust its grasping gestures, i.e. the finger gaits, to address the workspace limits and guarantee the object stability. However, realizing finger gaits planning in dexterous manipulation is challenging due to the complicated grasp quality metrics, uncertainties on object shapes and dynamics (mass and moment of inertia), and unexpected slippage under uncertain contact dynamics. In this paper, a dual-stage optimization based planner is proposed to handle these challenges. In the first stage, a velocity-level finger gaits planner is introduced by combining object grasp quality with hand manipulability. The proposed finger gaits planner is computationally efficient and realizes finger gaiting without 3D model of the object. In the second stage, a robust manipulation controller using robust control and force optimization is proposed to address object dynamics uncertainties and external disturbances. The dual-stage planner is able to guarantee stability under unexpected slippage caused by uncertain contact dynamics. Moreover, it does not require velocity measurement or expensive 3D/6D tactile sensors. The proposed dual-stage optimization based planner is verified by simulations on Mujoco.
+
+== Paper Download
+The full paper can be downloaded through [robfiggait.pdf this link]. 
+
+== Simulation Results
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/fvsFtnAyODs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+Video: Overall Demonstration Video 
+
+\n
+
+
+== Contacts
+
+contact my email for any questions: yongxiang_fanATberkeleyDOTedu
+
+
+
+
+
+
+

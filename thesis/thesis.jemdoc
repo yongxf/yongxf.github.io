@@ -1,0 +1,161 @@
+# jemdoc: menu{MENU}{http://www.me.berkeley.edu/~yongxiangfan/research.html}, analytics{UA-114953994-1} 
+= Dexterity in Robotic Grasping, Manipulation and Assembly
+\n
+*Yongxiang Fan*
+
+Welcome!
+
+This website supplements my Ph.D. thesis submission. The objective is to improve robotic dexterity of industrial manipulators in mass customization. The manipulators with proposed algorithms are expected to: 
+. reduce the hand-engineering in end-effector design, parameter tuning and system integration, 
+. exhibit robustness to the uncertainties during the interaction with environments. 
+
+
+The fulfillment of the requirements are decomposed into three aspects in this thesis: 
+. realize /kinematic dexterity/ by developing unified grasping strategies with customized end-effectors and general hands for objects of different materials and categories
+. achieve /dynamic dexterity/ by constructing an in-hand manipulation and finger gaiting architecture to manipulate the grasped objects robustly and precisely. 
+. attain /skill dexterity/ by designing an intelligent assembly algorithm to learn assembly skills from uncertain environment. 
+
+
+== Dissertation Outline
+~~~
+{}{img_left}{thesis_structure.png}{alt text}{640}{}
+~~~
+
+Fig: Outline of the dissertation. 
+
+
+
+== Part I: Kinematic Dexterity by Grasping
+=== [http://www.me.berkeley.edu/~yongxiangfan/CASE2018/caseisf.html Chapter 2: Grasp Planning with Customized Industrial Grippers by Surface Fitting]
+Published to CASE2018. \[[https://arxiv.org/abs/1803.11290 Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/CASE2018/caseisf.html This Page] for More Details. 
+
+This chapter proposed an iterative surface fitting (ISF) algorithm is proposed to plan grasps for customized grippers. 
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1dBDEBZyJv8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RVbuXqtfwv4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+
+=== [http://www.me.berkeley.edu/~yongxiangfan/IROS2019/rcnnisf.html Chapter 3: Learning Efficient Grasp Exploration with Customized Grippers]
+Submitted to IROS2019. \[[http://arxiv.org/abs/1809.08546 Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/IROS2019/rcnnisf.html This Page] for More Details. 
+
+The ISF in Chapter 2 becomes slow in heavy clutter environment. This chapter combines a learning-based grasp explorer to plan robust grasps efficiently for customized grippers in heavy clutter environment.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jOXoFhPVm1Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+
+=== [http://www.me.berkeley.edu/~yongxiangfan/IROS2018/fingersplit.html Chapter 4: Transferring Grasps from Parallel Grippers to Multi-Fingered Hands by Finger Splitting]
+Published to IROS2018. \[[https://arxiv.org/abs/1804.00050 Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/IROS2018/fingersplit.html This Page] for More Details. 
+
+Chapter 2-3 plan grasps for parallel grippers with customized fingertips. 
+This chapter proposes a strategy called finger splitting, to plan precision grasps for multi-fingered hands starting from optimal parallel grasps.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/chIExqNYTOU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+
+=== [https://www.decf.berkeley.edu/~yongxiangfan/IROS2019/ppojpo.html Chapter 5: Optimization Model to Plan Grasps with Multi-Fingered Hands]
+Submitted to IROS2019. \[[https://arxiv.org/abs/1904.07332 Paper Download.]\] View [https://www.decf.berkeley.edu/~yongxiangfan/IROS2019/ppojpo.html This Page] for More Details. 
+
+Chapter 4 requires optimal grasps of parallel grippers to initialize the search. 
+This chapter proposes an optimization model to *directly* search for precision grasps from arbitrary infeasible initial configurations.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PQhHw4qFKT8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+
+
+=== [https://www.decf.berkeley.edu/~yongxiangfan/RAL2019/mdisf.html Chapter 6: Efficient Framework for General Robotic Grasping] 
+Submitted to RAL with IROS2019 option. \[[https://arxiv.org/abs/1902.10841 Paper Download.]\] View [https://www.decf.berkeley.edu/~yongxiangfan/RAL2019/mdisf.html This Page] for More Details. 
+
+The optimization model in Chapter 5 generates precision grasps only. 
+This chapter combines the optimization model in Chapter 5 with a multi-dimensional iterative surface fitting (MDISF) to form a general framework to plan versatile grasps and trajectories under uncertainties.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/21gu2SbHnXA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G03SSaPkMoU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+
+
+== Part II: Dynamic Dexterity by In-Hand Manipulation
+Chapter 1-6 improve kinematic dexterity by developing grasping algorithms with both customized grippers and multi-fingered hands. However, kinematic dexterity itself is not sufficient for stable workpiece operation. Appropriate force is required to grasp workpieces robustly under uncertainties. We refer the capacity of end-effector to exert force for object manipulation as dynamic dexterity. 
+
+=== [http://www.me.berkeley.edu/~yongxiangfan/IFAC2017/fingergait.html Chapter 7: Object Manipulation Framework by Modified Impedance Control]
+Published to IFAC2017. \[[http://www.me.berkeley.edu/~yongxiangfan/IFAC2017/fingergait.pdf Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/IFAC2017/fingergait.html This Page] for More Details.
+
+This chapter introduces a comprehensive architecture for dexterous in-hand manipulation, including a high-level robust controller for object Cartesian force generation, a mid-level manipulation controller for contact force optimization, and a low-level force tracking controller to track the optimized contact force.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lyDbemxShfE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+
+=== [http://www.me.berkeley.edu/~yongxiangfan/AIM2017/robman.html Chapter 8: Robust Dexterous Manipulation under Various Uncertainties]
+Published to AIM2017. \[[http://www.me.berkeley.edu/~yongxiangfan/AIM2017/robman.pdf Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/AIM2017/robman.html This Page] for More Details.
+
+This chapter proposes a robust manipulation controller to improve the robustness of the manipulation architecture of Chapter 7 and manipulate objects under various uncertainties and undesired hand properties. 
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aRSqkSQENY8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yCav3okBqbc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+
+
+
+
+=== [http://www.me.berkeley.edu/~yongxiangfan/IROS2017/robfiggait.html Chapter 9: Finger Gaits Planning for Robust Dexterous Manipulation]
+Published to IFAC2017 and IROS2017. \[[http://www.me.berkeley.edu/~yongxiangfan/IROS2017/robfiggait.pdf Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/IROS2017/robfiggait.html This Page] for More Details.
+
+The manipulation architecture from Chapter 7-8 cannot realize long-range object motion. This chapter further proposes a high-level finger gaits planner for finger gaiting and pivoting by integrating with the manipulation architecture of Chapter 6 and robust manipulation controller in Chapter 7. 
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fvsFtnAyODs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EQ1u-Gg2Fks?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+
+== Part III: Skill Dexterity by Learning Assembly
+
+Chapter 1-6 described the development of grasp planning algorithms to extend the dexterity of industrial manipulators in kinematic level. Chapter 7-9 described the development of manipulation control algorithms to extend the dexterity in dynamic level. In this part, the dexterity of the industrial manipulators will be further extended to skill level by developing a learning framework for industrial assembly. 
+
+=== [http://www.me.berkeley.edu/~yongxiangfan/ICRA2019/guidedddpg.html Chapter 10: Learning Industrial Assembly by Guided-DDPG]
+Accepted by ICRA2019 \[[http://www.me.berkeley.edu/~yongxiangfan/ICRA2019/guidedddpg.pdf Paper Download.]\] View [http://www.me.berkeley.edu/~yongxiangfan/ICRA2019/guidedddpg.html This Page] for More Details.
+
+
+This chapter proposes a learning method called guided-deep deterministic policy gradient for industrial assembly. 
+
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/de_owqVYyh8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+
+
+
+
+
+
+
+
+
+
+
+

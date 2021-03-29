@@ -1,0 +1,86 @@
+# jemdoc: menu{MENU}{RopeManipulation.html}, analytics{UA-114953994-1} 
+= Learning Grasp Exploration for Robust Bin Picking by RCNN-ISF
+\n
+Yongxiang Fan\*, Hsien-Chung Lin\*, Te Tang\*
+
+Welcome!
+
+
+This page supplements our CS280 Project submission report, in which we present an approach to plan robust grasps for bin picking with customized grippers by a novel approach that combines iterative surface fitting (ISF) and region with convolutional neural network (R-CNN). 
+
+
+Compared with general parallel grippers, the customized grippers have specifically designed fingers to increase the contact area with the workpieces and improve the grasp robustness. However, grasp planning for customized grippers is challenging due to the object variations, surface contacts and structural constraints of the grippers. In this project, an iterative surface fitting (ISF) algorithm is proposed to plan robust grasps by fitting the finger shapes towards the object surface. ISF simultaneously searches for optimal gripper transformation and finger displacement by minimizing the surface fitting error. A learning based grasp exploration method using region with convolutional neural networks (R-CNN) is introduced to avoid ISF getting stuck in bad local optima and to improve the collision avoidance performance. The proposed RCNN-ISF is able to consider the structural constraints of the gripper, learn grasp exploration strategy from previous experience, and plan optimal grasps in clutter environment in real-time. The effectiveness of the algorithm is verified by both simulations and experiments.
+
+
+
+== Simulation Results on baseline-ISF
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/1dBDEBZyJv8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+Video: Illustration of the grasp searching by baseline-ISF.  
+
+
+
+
+== Experimental Results by baseline-ISF
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/RVbuXqtfwv4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+Video: Bin picking task with the baseline-ISF. The method works fine in light clutter environment. 
+
+
+
+=== Experimental Results by RCNN-ISF
+
+=== Clean Environment
+The R-CNN behaves similar with baseline initialization using K-means clustering in clean environment, as shown in below video. 
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/2uhMiLjmSpY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+Video: The experimental result by RCNN-ISF.
+
+
+
+=== Heavy Clutter Environment
+
+As the point cloud getting more complicated, the ISF initialization by K-means clustering becomes less-efficient. We utilize R-CNN to learn the good regions to initilize ISF search. 
+
+~~~
+{}{img_left}{rcnn_heavyclutter.png}{alt text}{960}{600}
+~~~
+
+Fig: Grasp planning results on clutter environment by RCNN-ISF. (Up) Clutter environment. (Middle) Selected regions by R-CNN to initialize ISF searching. (Bottom) Execution of the grasps planned by ISF.
+
+
+== Failure Mode
+Point to plane fitting error may not be the best metric when choosing the optimal grasp from multiple feasible grasps.
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/502cKN7MSuU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+
+== Contacts
+
+contact my email for any questions: yongxiang_fanATberkeleyDOTedu
+
+
+
+
+
+
+

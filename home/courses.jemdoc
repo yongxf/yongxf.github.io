@@ -1,0 +1,71 @@
+# jemdoc: menu{MENU}{home.html}, analytics{UA-114953994-1} 
+= A Learning Framework for High Precision Industrial Assembly
+\n
+Yongxiang Fan, Jieliang Luo, Masayoshi Tomizuka
+
+Welcome!
+
+
+This page supplements our ICRA paper submission, in which we present a learning framework to learn a high precision industrial assembly policy. The framework contains a semi-supervisor by trajectory optimization, and a reinforcement learning by actor-critic. 
+
+Automatic assembly has broad applications in industries. Traditional assembly tasks utilize predefined trajectories or tuned force control parameters, which make the automatic assembly time-consuming, difficult to generalize, and not robust to uncertainties. In this paper, we propose a learning framework for high precision industrial assembly. The framework combines both the supervised learning and the reinforcement learning. The supervised learning utilizes trajectory optimization to provide the initial guidance to the policy, while the reinforcement learning utilizes actor-critic algorithm to establish the evaluation system when the supervisor is not accurate. The proposed learning framework is more efficient compared with the reinforcement learning and achieves
+better stability performance than the supervised learning. The effectiveness of the method is verified by both the simulation
+and experiment.
+
+
+== Paper Download
+The full paper can be downloaded through [guidedddpg.pdf this link]. 
+
+== Simulation Results
+Two simulation tasks are introduced to verify the algorithm. The first one is U-shape joint assembly, and the second one is the Lego brick insertion. We first use U-shape joint assembly to illustrate the performance of the guided-DDPG compared with pure-DDPG. 
+
+=== Comparison of DDPG and Guided-DDPG (with U-Shape Joint Assembly Task)
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L3-U3NKJpQ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J31sU3ReSg0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+Video: Comparison of the pure-DDPG (Left) and the Guided-DDPG (Right)
+
+\n
+
+=== Adaptability Test
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/vE8fyGPk1m8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+Video: The adaptablity of the learned policy. The policy successfully adapts to various uncertianties except the incomplete hole. 
+\n
+
+
+
+== Experimental Results
+We use the Lego brick insertion task to illustrate the proposed learning framework. Due to the calibration error, the hole of the Lego piece is not precisely known. A successful assembly policy should adapt according to the environment. 
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PYHO-FIubFQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OGfjetTSEO8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+Video: Test results for the Pure-DDPG (Left) and Guided-DDPG (Right). The Pure-DDPG is trained by constraining the exploration space in 1mm out of the boundary of the hole, while the Guided-DDPG is trained by constraining the exploration space in 3mm out of the boundary of the hole. The training time is 2 hours and 1.5 hours, respectively. 
+
+
+
+
+== Overall Summary Video
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/de_owqVYyh8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+\n
+
+
+== Contacts
+
+contact my email for any questions: yongxiang_fanATberkeleyDOTedu
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+# jemdoc: menu{MENU}{publications.html}, analytics{UA-114953994-1} 
+
+= Publications
+
+
+== Journals
+. *Fan, Y.*, & Tomizuka, M. (2019). Efficient Grasp Planning and Execution with Multi-Fingered Hands by Surface Fitting. Submitted to /2019 IEEE Robotics and Automation Letters/.
+
+
+== Conference Proceedings
+. *Fan, Y.*, Zhu, X., & Tomizuka, M. (2019). Optimization Model for Planning Precision Grasps with Multi-Fingered Hands. Submitted to /2019 IEEE\/RSJ International Conference on Intelligent Robots and Systems (IROS)/.
+. *Fan, Y.*, Lin, H.-C., Tang, T., & Tomizuka, M. (2019). A Learning Framework for Robust Bin Picking by Customized Grippers. Submitted to /2019 IEEE\/RSJ International Conference on Intelligent Robots and Systems (IROS)/.
+. *Fan, Y.*, Luo, J., & Tomizuka, M. (2019). A Learning Framework for Precision Industrial Assembly. Accepted by /Robotics and Automation (ICRA), 2019 IEEE International Conference on/.
+. *Fan, Y.*, Tang, T., Lin, H. C., & Tomizuka, M. (2018, October). Real-time grasp planning for multi-fingered hands by finger splitting. In /2018 IEEE\/RSJ International Conference on Intelligent Robots and Systems (IROS)/ (pp. 4045-4052). IEEE.
+. *Fan, Y.*, Lin, H. C., Tang, T., & Tomizuka, M. (2018, August). Grasp planning for customized grippers by iterative surface fitting. In /2018 IEEE 14th International Conference on Automation Science and Engineering (CASE)/ (pp. 28-34). IEEE. *(Best Application Paper Award)*
+. *Fan, Y.*, Tang, T., Lin, H. C., Zhao, Y., & Tomizuka, M. (2017, September). Real-time robust finger gaits planning under object shape and dynamics uncertainties. In /Intelligent Robots and Systems (IROS), 2017 IEEE\/RSJ International Conference on/ (pp. 1267-1273). IEEE.
+. *Fan, Y.*, Sun, L., Zheng, M., Gao, W., & Tomizuka, M. (2017, July). Robust dexterous manipulation under object dynamics uncertainties. In /Advanced Intelligent Mechatronics (AIM), 2017 IEEE International Conference on/ (pp. 613-619). IEEE. *(Best Conference Paper Award Finalist)*
+. *Fan, Y.*, Gao, W., Chen, W., & Tomizuka, M. (2017). Real-time finger gaits planning for dexterous manipulation. /IFAC-PapersOnLine, 50(1), 12765-12772./
+. *Fan, Y.*, Lin, H. C., Zhao, Y., Lin, C. Y., Tang, T., Tomizuka, M., & Chen, W. (2016, August). Object position and orientation tracking for manipulators considering nonnegligible sensor physics. In /Flexible Automation (ISFA), International Symposium on/ (pp. 450-457). IEEE.
+. Tang, T., *Fan, Y.*, Lin, H. C., & Tomizuka, M. (2017, September). State estimation for deformable objects by point registration and dynamic simulation. In /Intelligent Robots and Systems (IROS), 2017 IEEE\/RSJ International Conference on/ (pp. 2427-2433). IEEE.
+. Lin, H. C., *Fan, Y.*, Tang, T., & Tomizuka, M. (2016, October). Human guidance programming on a 6-DoF robot with collision avoidance. In /Intelligent Robots and Systems (IROS), 2016 IEEE\/RSJ International Conference on/ (pp. 2676-2681). IEEE.
+. Lin, H. C., Tang, T., *Fan, Y.*, Zhao, Y., Tomizuka, M., & Chen, W. (2016, June). Robot learning from human demonstration with remote lead hrough teaching. In /Control Conference (ECC), 2016 European/ (pp. 388-394). IEEE.
+. Lin, H. C., Liu, C., *Fan, Y.*, & Tomizuka, M. (2017, August). Real-time collision avoidance algorithm on industrial manipulators. In /Control Technology and Applications (CCTA), 2017 IEEE Conference on/ (pp. 1294-1299). IEEE.
+. Lin, H. C., Tang, T., *Fan, Y.*, & Tomizuka, M. (2018, October) A framework for robot grasping transferring with non-rigid transformation." In /Intelligent Robots and Systems (IROS), 2018 IEEE\/RSJ International Conference on/.
+. Tang, T., Lin, H. C., Zhao, Y., *Fan, Y.*, Chen, W., & Tomizuka, M. (2016, July). Teach industrial robots peg-hole-insertion by human demonstration. In /Advanced Intelligent Mechatronics (AIM), 2016 IEEE International Conference on/ (pp. 488-494). IEEE.
+
+
+== Patent
+Akeel, Hadi and Fan, Yongxiang. 2017. Vision guided robot path programming. U.S. Patent Application No. 15/800,623, filed Nov. 1, 2017.

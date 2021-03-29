@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Robust Dexterous Manipulation under Object Dynamics Uncertainties</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-114953994-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Website</div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/index.html">Home</a></div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/publications.html">Publications</a></div>
+<div class="menu-item"><a href="http://www.me.berkeley.edu/~yongxiangfan/courses.html">Courses</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Robust Dexterous Manipulation under Object Dynamics Uncertainties</h1>
+<div id="subtitle"><br />
+Yongxiang Fan, Liting Sun, Minghui Zheng, Wei Gao, Masayoshi Tomizuka</div>
+</div>
+<p>Welcome!</p>
+<p>This page supplements our AIM 2017 paper submission, in which we present a dual-stage grasp controller to manipulate objects robustly under uncertainties.</p>
+<p>Dexterous manipulation has broad applications in assembly lines, warehouses and agriculture. To perform broadscale,
+complicated manipulation tasks, it is desired that a multifingered robotic hand can robustly manipulate objects without
+knowing the full dynamics of objects (i.e. mass, moment of inertia) in advance. However, realizing robust manipulation
+is challenging due to the complex contact dynamics, the nonlinearities of the system, and the potential sliding during
+manipulation. In this paper, a dual-stage grasp controller is proposed to handle these challenges. In the first stage, feedback
+linearization is utilized to linearize the nonlinear uncertain system. Considering the structures of uncertainties, a robust
+controller is designed for such a linearized system to obtain the desired Cartesian force on the object. In the second stage,
+a manipulation controller using force optimization and torque control regulates the contact force and torque based on the
+Cartesian force from the first stage. The dual-stage grasp controller is able to realize robust manipulation without contact
+modeling, prevent the slippage, and withstand at least 40% mass uncertainty and 50% moment of inertia uncertainty. Moreover,
+it does not require velocity information of the object. Simulation results on Mujoco verify the efficacy of the proposed dual-stage
+grasp controller.</p>
+<h2>Paper Download</h2>
+<p>The full paper can be downloaded through <a href="robman.pdf">this link</a>. </p>
+<h2>Simulation Results</h2>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/aRSqkSQENY8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>Video: Overall Demonstration Video </p>
+<p><br /></p>
+<h2>Contacts</h2>
+<p>contact my email for any questions: yongxiang_fanATberkeleyDOTedu</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2018-09-25 22:24:23 Pacific Daylight Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

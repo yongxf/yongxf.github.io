@@ -1,0 +1,48 @@
+# jemdoc: menu{MENU}{http://www.me.berkeley.edu/~yongxiangfan/research.html}, analytics{UA-114953994-1} 
+= Robust Dexterous Manipulation under Object Dynamics Uncertainties
+\n
+Yongxiang Fan, Liting Sun, Minghui Zheng, Wei Gao, Masayoshi Tomizuka
+
+Welcome!
+
+
+This page supplements our AIM 2017 paper submission, in which we present a dual-stage grasp controller to manipulate objects robustly under uncertainties.
+
+Dexterous manipulation has broad applications in assembly lines, warehouses and agriculture. To perform broadscale,
+complicated manipulation tasks, it is desired that a multifingered robotic hand can robustly manipulate objects without
+knowing the full dynamics of objects (i.e. mass, moment of inertia) in advance. However, realizing robust manipulation
+is challenging due to the complex contact dynamics, the nonlinearities of the system, and the potential sliding during
+manipulation. In this paper, a dual-stage grasp controller is proposed to handle these challenges. In the first stage, feedback
+linearization is utilized to linearize the nonlinear uncertain system. Considering the structures of uncertainties, a robust
+controller is designed for such a linearized system to obtain the desired Cartesian force on the object. In the second stage,
+a manipulation controller using force optimization and torque control regulates the contact force and torque based on the
+Cartesian force from the first stage. The dual-stage grasp controller is able to realize robust manipulation without contact
+modeling, prevent the slippage, and withstand at least 40\% mass uncertainty and 50\% moment of inertia uncertainty. Moreover,
+it does not require velocity information of the object. Simulation results on Mujoco verify the efficacy of the proposed dual-stage
+grasp controller.
+
+
+== Paper Download
+The full paper can be downloaded through [robman.pdf this link]. 
+
+== Simulation Results
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/aRSqkSQENY8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+Video: Overall Demonstration Video 
+
+\n
+
+
+== Contacts
+
+contact my email for any questions: yongxiang_fanATberkeleyDOTedu
+
+
+
+
+
+
+

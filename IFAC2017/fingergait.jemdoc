@@ -1,0 +1,37 @@
+# jemdoc: menu{MENU}{http://www.me.berkeley.edu/~yongxiangfan/research.html}, analytics{UA-114953994-1} 
+= Real-Time Finger Gaits Planning for Dexterous Manipulation
+\n
+Yongxiang Fan, Wei Gao, Wenjie Chen, Masayoshi Tomizuka
+
+Welcome!
+
+
+This page supplements our IFAC 2017 paper submission, in which we present a dual-stage optimization based controller for real-time finger gaits planning. 
+
+Dexterous manipulation has broad potential applications in assembly lines, warehouses and agriculture, and so on. To perform large-scale, complicated manipulation tasks, a multi-fingered robotic hand sometimes has to sequentially adjust its grasping status, i.e. the finger gaits, to deal with the workspace limits and object stability. However, realizing finger gaits planning in dexterous manipulation is challenging due to the involved hybrid dynamics, complicated grasp quality metrics, and uncertainties during the finger gaiting. In this paper, a dual-stage optimization based controller is proposed to handle these challenges. First, a velocity-level finger gaits planner is introduced by combining object grasp quality with hand kinematic limitations. The proposed finger gaits planner is computationally efficient and can be solved in real-time. Second, a manipulation controller using force optimization is presented. To deal with mass uncertainties and external disturbances, a modified impedance control is integrated into the manipulation controller. The dual-stage controller does not require the shape of the object, nor does it rely on expensive 3D/6D tactile sensors. Simulation results verify the efficacy of the proposed dual-stage controller. 
+
+
+== Paper Download
+The full paper can be downloaded through [fingergait.pdf this link]. 
+
+== Simulation Results
+
+~~~
+{}{raw}
+<iframe width="960" height="540" src="https://www.youtube.com/embed/X0yrPLv5rXk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+~~~
+Video: Overall Demonstration Video 
+
+\n
+
+
+== Contacts
+
+contact my email for any questions: yongxiang_fanATberkeleyDOTedu
+
+
+
+
+
+
+

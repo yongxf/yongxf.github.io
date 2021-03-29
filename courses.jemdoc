@@ -1,0 +1,26 @@
+# jemdoc: menu{MENU}{courses.html}, analytics{UA-114953994-1} 
+= Courses 
+
+== Controls
+- Experiential Advanced Control Design I (ME231, Prof. [http://www.me.berkeley.edu/people/faculty/francesco-borrelli Francesco Borrelli], Prof. [http://www.me.berkeley.edu/people/faculty/kameshwar-poolla Kameshwar Poolla])
+- Advanced Control Systems I (ME232, Prof. [http://www.me.berkeley.edu/horowitz Roberto Horowitz])
+- Advanced Control Systems II (ME233, Prof. [https://ece.njit.edu/people/wang.php Cong Wang])
+- Multivariable Control Systems (ME234, Prof. [https://www.me.berkeley.edu/people/faculty/andrew-packard Andrew Packard])
+- Mathematical Methods for Engineers [E231, Prof. [http://www.me.berkeley.edu/people/faculty/kameshwar-poolla Kameshwar Poolla], Prof. [https://www.me.berkeley.edu/people/faculty/andrew-packard Andrew Packard])
+
+== Robotics
+- Advanced Robotics (CS287, Prof. [Pieter Abbeel https://people.eecs.berkeley.edu/~pabbeel/])
+- Robotic Manipulation and Interaction (EE206B, Prof. [http://goldberg.berkeley.edu/ Ken Goldberg], Prof. [https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html Ruzena Bajcsy], Prof. [https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html S. Shankar Sastry])
+
+== Optimization
+- Learning and Optimization (IEOR265, Prof. [http://ieor.berkeley.edu/people/faculty/aswani Anil Aswani])
+- Mathematical Programming II (IEOR262B Prof.[http://ieor.berkeley.edu/people/faculty/oren Shmuel S. Oren])
+- Convex Optimization (EE227BT, Prof. [https://people.eecs.berkeley.edu/~elghaoui/ El Ghaoui])
+
+== Machine Learning
+- Introduction to Machine Learning (CS289A, Prof. [https://www2.eecs.berkeley.edu/Faculty/Homepages/efros.html Alexei (Alyosha) Efros], Prof. [https://www2.eecs.berkeley.edu/Faculty/Homepages/bartlett.html Peter Bartlett])
+- Computer Vision (CS280, Prof. [https://www2.eecs.berkeley.edu/Faculty/Homepages/malik.html Jitendra Malik], Prof. [http://www1.icsi.berkeley.edu/~stellayu/ Stella Yu], Prof. [https://www2.eecs.berkeley.edu/Faculty/Homepages/efros.html Alexei (Alyosha) Efros])
+- Deep Reinforcement Learning (CS294-112, Prof. [https://people.eecs.berkeley.edu/~svlevine/ Sergey Levine])
+
+
+
