@@ -1,26 +1,22 @@
 # jemdoc: menu{MENU}{index.html}, analytics{UA-114953994-1} 
-= Yongxiang Fan
+= Yongxiang (Bruce) Fan
 
 
 ~~~
-{}{img_left}{myphoto.jpg}{Yongxiang Fan}{300px}
+{}{img_left}{myphoto.jpg}{Yongxiang (Bruce) Fan}{300px}
 Welcome to my website!
-\n
-I am a Ph.D. in Robotics graduated from *[https://www.berkeley.edu/ University of California, Berkeley]*. I worked with *Prof. [http://www.me.berkeley.edu/people/faculty/masayoshi-tomizuka Masayoshi Tomizuka]* in [http://msc.berkeley.edu/index.html Mechanical Systems Control] (MSC) Labortorary. 
-\n
-My research interest lies in interdisciplinary combination of robotics, optimization, aritificial intelligence and control theories, with the fileds in robotic dexterity research (grasping, manipulation and assembly) and human robot interation (collision avoidance, motion planning and human robot collabration). 
 
-\nEmail: yongxiang_fanATberkeleyDTedu\n 
+I am the Co-founder and Chief Technology Officer of [https://anyware-robotics.com Anyware Robotics Inc.], a company I co-founded in 2023. We develop multi-purpose robotic systems for warehouse automation and covers a few applications such as truck unloading, palletization, depalletization and case picking.
+
+Prior to founding Anyware, I was a Senior Research Scientist at the FANUC Advanced Research Lab (2019–2022), where I worked on AI-based grasping and motion planning technologies, reporting directly to FANUC's executive leadership.
+
+I earned my Ph.D. in Robotics from the [https://www.berkeley.edu University of California, Berkeley], where I conducted research in the [http://msc.berkeley.edu/index.html Mechanical Systems Control (MSC) Laboratory] under the supervision of [http://www.me.berkeley.edu/people/faculty/masayoshi-tomizuka Prof. Masayoshi Tomizuka].
+
+My research interests lie at the intersection of robotics, artificial intelligence, and control theory, with a focus on robotic dexterity (grasping, manipulation, and assembly) and human–robot interaction (collision avoidance, motion planning, and collaborative autonomy).
+
+
+\nEmail: bruce.fanATanyware-roboticsDTcom\n 
 \[[files/cv.pdf Curriculum Vitae]\], \[[https://scholar.google.com/citations?user=YAGWw68AAAAJ&hl=en Google Scholar]\]
-
-== Updates
-. 02\/2021: Paper: Learn to Grasp with Less Supervision: A Data-Efficient Posterior Grasp Sampling Loss, submitted to RAL with IROS2021 option.
-. 02\/2021: Paper: 6-DoF Contrastive Grasp Proposal Network accepted by ICRA 2021.
-. 10\/2020: Short Paper: Why Does Robotic Dexterous Hand Grasp Fail? accepted by IROS 2020 Workshop.
-. 05\/2019: Dissertation defense finished!
-. 03\/2019: Two Papers: [https://arxiv.org/abs/1902.10841 Efficient Grasp Planning and Execution with Multi-Fingered Hands by Surface Fitting] and [IROS2019/ppojpo.html Iterative PPO-JPO] accepted by RAL and IROS2019!
-. 02\/2019: Paper: [http://arxiv.org/abs/1809.08548 A Learning Framework for High Precision Industrial Assembly] accepted by [https://www.icra2019.org/ IEEE ICRA2019]!
-. 08\/2018: Paper: [https://arxiv.org/abs/1803.11290 Grasp Planning for Customized Grippers by Iterative Surface Fitting] won the [http://case2018.org/ IEEE CASE2018] [http://www.ieee-ras.org/awards-recognition/conference-awards/69-awards-recognition/society-awards/81-ieee-case-best-application-paper-award-sponsored-by-qsi Best Application Paper Award]! 
 ~~~
 
 == Education
@@ -35,6 +31,15 @@ My research interest lies in interdisciplinary combination of robotics, optimiza
 -- GPA: 92.7\/100, Ranking: 1\/61
 
 == Experience
+- **Chief Technology Officer**, [https://anyware-robotics.com Anyware Robotics Inc.] ~~~~~~~~~~ 2023 – Present  
+  -- Leading R&D for the development of Pixmo, a multi-purpose warehouse automation robot  
+  -- Leading the design and deployment of robotic unloading solutions  
+  -- Leading palletization system development for autonomous logistics
+
+- **Senior Research Scientist**, FANUC Advanced Research Lab ~~~~~~~~~~ 2019 – 2022  
+  -- Led research on AI-based grasp generation for unknown objects  
+  -- Developed industrial-grade bin picking solutions with robust grasping algorithms  
+  -- Built and deployed real-time collision avoidance and motion planning systems for industrial arms
 
 - Graduate Student Researcher~~~~~~~~ MSC Lab, UC Berkeley~~~~~~~~ 2014-2019
 -- Project 1: *Grasp* Planning for Customized Grippers\/ Multi-Fingered Hands
